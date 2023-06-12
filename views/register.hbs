@@ -1,0 +1,35 @@
+<div class="form-wrap">
+    <div>
+        <img class="register-img" src="/images/register.png" alt="Регистрация">
+    </div>
+    <div class="reg-form">
+        <div class="labels-inputs">
+            <form action="/account/register" method="post">
+                <div class="form-register">
+                    <label id="label-reg" for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-register">
+                    <label id="label-reg" for="name">Имя</label>
+                    <br>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-register">
+                    <label id="label-reg" for="password">Пароль</label>
+                    <br>
+                    <input type="password" name="password" required>
+                </div>
+                <div class="form-register">
+                    <label id="label-reg" for="passwordSecond">Повторите пароль</label>
+                    <br>
+                    <input type="password" name="passwordSecond" required>
+                </div>
+                <button class="button-register" type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+        <hr id="register">
+        <p class="exist-acc">Уже есть аккаунта?</p>
+        <button><a href="/account/login">Вход</a></button>
+    </div>
+</div>

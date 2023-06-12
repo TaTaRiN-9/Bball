@@ -1,0 +1,29 @@
+<div class="form-wrap">
+    {{#if (message.error)}}
+        <h1>message.error</h1>
+    {{/if}}
+    <div>
+        <img class="register-img" src="/images/login.png" alt="Регистрация">
+    </div>
+    <div class="reg-form">
+        <div class="labels-inputs">
+            <form action="/account/login" method="post">
+                <div class="form-register">
+                    <label id="label-reg" for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-register">
+                    <label id="label-reg" for="password">Пароль</label>
+                    <br>
+                    <input type="password" name="password" required>
+                </div>
+                <button class="button-register" type="submit">Войти</button>
+            </form>
+        </div>
+        <a id="forgot-password" href="#">Забыли пароль?</a>
+        <hr id="register">
+        <p class="exist-acc">Нет аккаунта?</p>
+        <button><a href="/account/register">Регистрация</a></button>
+    </div>
+</div>

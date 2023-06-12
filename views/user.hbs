@@ -1,0 +1,37 @@
+<div class="form-wrap">
+    <div>
+        <img class="user-img" src="/images/account1.png" alt="Личный кабинет">
+    </div>
+    <div class="reg-form">
+        <div class="labels-inputs">
+            <form action="/account/me" method="POST">
+                <div class="form-register">
+                    <label id="label-reg" for="email">Email</label>
+                    <br>
+                    <input value="{{email}}" type="email" name="email" required>
+                </div>
+                <div class="form-register">
+                    <label id="label-reg" for="secondName">Фамилия</label>
+                    <br>
+                    <input value="{{secondName}}" type="text" name="secondName">
+                </div>
+                <div class="form-register">
+                    <label id="label-reg" for="name">Имя</label>
+                    <br>
+                    <input value="{{name}}" type="text" name="name" required>
+                </div>
+                <div class="form-register">
+                    <label id="label-reg" for="numberTel">Номер телефона</label>
+                    <br>
+                    <input value="{{numberTel}}" type="text" name="numberTel">
+                </div>
+                <button class="button-register" type="submit">
+                    Сохранить
+                </button>
+            </form>
+            <form action="/logout" method="get">
+                <button type="submit">Выйти из аккаунта</button>
+            </form>
+        </div>
+    </div>
+</div>
